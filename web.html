@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+
+        }
+        .study-type {
+            margin-top: 20px;
+        }
+        .study-type label,
+        .study-lastWord label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+          <legend>HTML 스터디 망해가는 이유는?</legend>
+            <div>
+                <label for="good">좋아요</label>
+                <input id="good" type="radio" name="study">
+                <label for="verygood">아주 좋아요</label>
+                <input id="verygood" type="radio"name="study">
+                <label for="excellent">훌륭해요!</label>
+                <input id="excellent" type="radio" name="study">
+            </div>
+            <div class="study_type">
+                <label for="study_type">만약 다른 스터디를 하고 싶다면?</label>
+                <select name="study_type" id="study_type">
+                    <option value="js">자바스크립트</option>
+                    <option value="py">파이썬</option>
+                    <option value="c#">씨샵</option>
+
+                </select>
+            </div>
+            <div class="study-lastWord">
+            <label for="마지막으로 하고싶은 말"></label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button type="submit">전송하기</button>
+                <button type="reset">다시 작성하기</button>
+            </div>
+
+        </fieldset>
+      </form>
+</body>
+</html>
